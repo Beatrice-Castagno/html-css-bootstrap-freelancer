@@ -12,12 +12,15 @@ h1, h2 {
 }
 
 .bg_secondary {
-  background-color: rgba(46, 194, 159, 1)
+  background-color: #1abc9c;
 }
 /* /background */
 /* color */
 .color_white {
   color:white;
+}
+.color_dark_grey {
+  color: #2c3e50;
 }
 /* color text */
 
@@ -57,8 +60,8 @@ h1, h2 {
   font-size: 20px;
 }
 
-.container_hero img {
-height: 250px;
+.img_hero {
+width:25%;
 }
 
 .container_hero h1 {
@@ -81,7 +84,43 @@ height: 250px;
 /* /HEADER */
 
 /* MAIN */
+section {
+padding: 40px 0;
+}
+/* portfolio */
+#portfolio h2 {
+  font-size: 50px;
+}
+.box_portfolio {
+  position: relative;
+  margin-top: 25px;
+  cursor: pointer;
+}
 
+.img_portfolio {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.overlay::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.overlay:hover::after {
+  background-color: rgba(26, 188, 156, 0.9);
+  border-radius: 10px;
+  background-image: url("../img/icon/add.svg");
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: 50% 50%;
+}
+/* /portfolio */
 /* /MAIN */
 
 /* RESPONSIVE */
@@ -97,9 +136,6 @@ height: 250px;
   }
   /* /nav */
   /* hero */
-  .container_hero img {
-    height: 200px;
-  }
   .container_hero h1 {
     font-size: 45px;
   }
@@ -119,19 +155,10 @@ height: 250px;
   .link_nav > li {
     padding: 25px 10px;
   }
-
   /* /nav */
   /* hero */
-  .container_hero img {
-    height: 160px;
-  }
-
   .container_hero h1 {
     font-size: 40px;
-  }
-
-  .container_hero p {
-    font-size: 16px;
   }
 
   #star, #row_star {
@@ -139,6 +166,23 @@ height: 250px;
     line-height: 55px;
   }
   /* /hero */
+  /* main */
+  /* portfolio */
+  .img_portfolio {
+    width: 80%;
+    border-radius: 10px;
+  }
+
+  #portfolio h2 {
+    font-size: 40px;
+  }
+
+  #star, #row_star {
+    font-size: 25px;
+    line-height: 5px;
+  }
+  /* /portfolio */
+  /* /main */
 }
 /* SMARTPHONE */
 @media screen and (max-width:767px) {
@@ -157,16 +201,12 @@ height: 250px;
   }
   /* /nav */
   /* hero */
-  .container_hero img {
-    height: 140px;
-  }
-
   .container_hero h1 {
     font-size: 30px;
   }
 
   .container_hero p {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   #star, #row_star {
@@ -174,6 +214,22 @@ height: 250px;
     line-height: 40px;
   }
   /* /hero */
+  /* main */
+  /* portfolio */
+  .img_portfolio {
+    width: 65%;
+    border-radius: 10px;
+  }
+
+  #portfolio h2 {
+    font-size: 30px;
+  }
+
+  #star, #row_star {
+    font-size: 25px;
+  }
+  /* portfolio */
+  /* /main */
 }
 
 /* /REPSONSIVE */
