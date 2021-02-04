@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Start - Bootstrap</title>
+  <!-- font google -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <!-- /font google -->
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <!-- /fontawesome -->
   <!-- freamwork Bootstrap -->
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -12,39 +20,56 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <!-- NAV GRIGIA -->
-    <div class="container-fluid bg_grey">
-      <div class="container_nav color_white">
-        <div class="row">
-          <div class="col-sx-6 title_nav float_left">
-            <h1>START BOOTSTRAP</h1>
-          </div>
-          <div class="col-sx-6 link_nav float_right text-right">
-            <a href="#">Lorem</a>
-            <a href="#">Lorem</a>
-            <a href="#">Lorem</a>
+    <!-- INTESTAZIONE -->
+    <header class="color_white">
+      <!-- NAV GRIGIO SCURO -->
+      <div class="container_nav bg_primary">
+        <div class="container">
+          <div class="row">
+            <!-- titolo -->
+            <div class="col-xs-6 title">
+              <h2>Start Bootstrap</h2>
+            </div>
+            <!-- /titolo -->
+            <!-- navbar destra -->
+            <div class="col-xs-6">
+              <nav class="text-right">
+                <ul class="link_nav">
+                  <li><a href="#">portfolio</a></li>
+                  <li><a href="#">about</a></li>
+                  <li><a href="#">contact</a></li>
+                </ul>
+                </nav>
+                <!-- <div id="hamburger" class="text-right">
+                  <i class="fas fa-hamburger"></i>
+                </div> -->
+            </div>
+            <!-- /navbar destra -->
           </div>
         </div>
       </div>
-    </div>
-    <!-- /NAV GRIGIA -->
-    <!-- HERO -->
-    <div class="container-fluid bg-green">
-      <div class="container_hero color_white">
-        <div class="row">
-          <div class="col-sx-12">
-            <img class="img_hero" src="img/icon/boy-svgrepo-com.svg" alt="boy-hero">
-            <h2 class="line_height">START BOOTSTRAP</h2>
+      <!-- hero -->
+      <div class="container_hero bg_secondary">
+        <div class="container">
+          <div class="row">
+            <!-- blocco img e testo -->
+            <div class="col-xs-12 text-center">
+              <img src="img/avataaars.svg" alt="male">
+              <h1>Start Bootstrap</h1>
+              <div id="row_star"><i class="far fa-horizontal-rule"></i><i class="far fa-horizontal-rule"></i></div>
+              <div id="star"><i class="fas fa-star"></i></div>
+              <div id="row_star"><i class="far fa-horizontal-rule"></i><i class="far fa-horizontal-rule"></i></div>
+              <p>Graphic Artist - Web Designer - Illustrator</p>
+            </div>
+            <!-- /blocco img e testo -->
           </div>
         </div>
       </div>
-    </div>
-    <!-- /HERO -->
-  </header>
-
+      <!-- /hero -->
+      <!-- /NAV GRIGIO SCURO -->
+    </header>
+    <!-- /INTESTAZIONE -->
   <main>
-
   </main>
 
   <footer></footer>
