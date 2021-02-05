@@ -38,8 +38,8 @@
             <nav class="text-right">
               <ul class="link_nav list-inline">
                 <li><a href="#portfolio">portfolio</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#contact">contact</a></li>
               </ul>
               </nav>
           </div>
@@ -173,7 +173,7 @@
            <div class="row">
              <div class="col-xs-12">
                <div class="button_about text-center">
-                  <button type="submit" name="button"><i class="fas fa-download"></i> Free Download!</button>
+                  <button class="button_general" type="submit" name="button"><i class="fas fa-download"></i> Free Download!</button>
                </div>
              </div>
            </div>
@@ -182,7 +182,41 @@
        </div>
      </section>
      <!-- /sezione about -->
-
+     <!-- sezione contact -->
+      <section id="contact">
+        <div class="container">
+          <div class="row">
+            <!-- titolo -->
+            <div class="col-xs-12 text-center color_dark_grey">
+              <h2>Contact</h2>
+              <div class="divider_star">
+                <div class="row_star"></div>
+                <div class="star"><i class="fas fa-star"></i></div>
+                <div class="row_star"></div>
+              </div>
+              <!-- /titolo -->
+              <!-- form -->
+              <form class="contact_form" action="index.html" method="post">
+                <input type="text" name="name" value="" placeholder="Name">
+                <input type="email" name="email" value="" placeholder="Email">
+                <input type="tel" name="phone-number" value="" placeholder="Phone Number">
+                <textarea name="name" rows="8" cols="80" placeholder="Messaggio"></textarea>
+              </form>
+              <!-- /form -->
+            </div>
+            <!-- bottone contact -->
+            <div class="row">
+              <div class="col-xs-12 col-xs-offset-2">
+                <div class="button_contact color_white">
+                  <button class="button_general" type="submit" name="button">Send</button>
+                </div>
+              </div>
+            </div>
+            <!-- /bottone contact -->
+          </div>
+        </div>
+      </section>
+      <!-- /sezione contact -->
   </main>
   <!-- CORPO -->
   <footer></footer>

@@ -2,7 +2,7 @@
 /* html {
   scroll-behavior: smooth;
 } */
-
+/* GENERAL */
 body {
   font-family: 'lato', sans-serif;
 }
@@ -27,6 +27,13 @@ a:visited {
 li {
   list-style-type: none;
 }
+.button_general {
+  background-color: #1abc9c;
+  border-radius: 7px;
+  font-size: 20px;
+  padding: 20px 25px;
+}
+/* /GENERAL */
 
 /* background */
 .bg_primary {
@@ -103,18 +110,18 @@ padding: 15px 0;
   padding:5px 15px;
 }
 
- .row_star  {
-  height: 4px;
-  display: inline-block;
-  background-color: currentColor;
-  width: 10%;
-  border-radius: 5px;
-  vertical-align: middle;
- }
+.row_star  {
+height: 4px;
+display: inline-block;
+background-color: currentColor;
+width: 10%;
+border-radius: 5px;
+vertical-align: middle;
+}
 
- .divider_star .row_star {
-   background-color: currentColor;
- }
+.divider_star .row_star {
+ background-color: currentColor;
+}
 /* /hero */
 /* /HEADER */
 
@@ -174,10 +181,6 @@ padding: 40px 0;
 }
 
 .button_about button {
-  font-size: 20px;
-  background-color:  #1abc9c;
-  border-radius: 10px;
-  padding: 15px 25px;
   border: 2px solid white;
 }
 
@@ -185,6 +188,24 @@ padding: 40px 0;
   padding-right: 8px;
 }
 /* /sezione about */
+/* sezione contact */
+.contact_form {
+  padding: 2%;
+}
+
+.contact_form input, textarea {
+  font-size: 25px;
+  width: 70%;
+  border: none;
+  border-bottom: 1px solid rgb(233, 236, 239);
+  padding:25px 0;
+}
+
+.button_contact button {
+  border: none;
+}
+
+/* /sezione contact */
 /* /MAIN */
 
 /* RESPONSIVE */
@@ -244,6 +265,17 @@ padding: 40px 0;
     font-size: 25px;
   }
   /* /portfolio */
+  /* sezione contact */
+  .contact_form input, textarea {
+    font-size: 22px;
+    padding: 18px 0;
+  }
+
+  .button_contact button {
+    padding: 15px 24px;
+    font-size: 16px;
+  }
+  /* /sezione contact */
   /* /main */
 }
 /* SMARTPHONE */
@@ -287,13 +319,23 @@ padding: 40px 0;
   .star {
     font-size: 25px;
   }
-
   /* portfolio */
   /* sezione about */
   .button_about button {
     font-size: 16px;
   }
   /* /sezione about */
+  /* sezione contact */
+  .contact_form input, textarea {
+    font-size: 18px;
+    padding: 15px 0;
+  }
+
+  .button_contact button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  /* /sezione contact */
   /* /main */
 }
 
