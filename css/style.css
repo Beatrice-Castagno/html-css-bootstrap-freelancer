@@ -1,11 +1,25 @@
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'lato', sans-serif;
 }
 
 h1, h2 {
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
 }
+
+a:visited {
+  color:white;
+}
+
+li {
+  list-style-type: none;
+}
+
 /* background */
 .bg_primary {
   background-color: #2c3e50;
@@ -28,32 +42,33 @@ h1, h2 {
 /* nav */
 .container_nav {
   padding-top: 17px;
-  /* position: fixed;
+  position: fixed;
   top: 0;
+  left:0;
   right: 0;
-  width: 100%; */
+  z-index: 10;
 }
 
 .link_nav li {
-  list-style-type: none;
-  display: inline-block;
   padding: 25px 20px;
 }
 
 .link_nav a {
-  color: white;
-  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
-#hamburger {
-  display: none;
+.link_nav a:hover {
+  color:  rgb(26, 188, 156);
 }
+
 /* /nav */
 /* hero */
 .container_hero {
-  padding: 70px;
+  padding: 50px;
+  margin-top: 100px;
 }
 
 .container_hero p {
@@ -69,17 +84,27 @@ width:25%;
   font-size: 60px;
 }
 
-#star {
+.star {
   font-size: 40px;
-  line-height: 80px;
+  vertical-align: middle;
   display: inline-block;
   padding:15px;
 }
 
- #row_star {
-  font-size: 40px;
+ .row_star  {
+  height: 4px;
   display: inline-block;
+  background-color: currentColor;
+  width: 10%;
+  border-radius: 5px;
+  vertical-align: middle;
  }
+
+ #portfolio .row_star {
+   background-color: currentColor;
+ }
+
+
 /* /hero */
 /* /HEADER */
 
@@ -91,15 +116,17 @@ padding: 40px 0;
 #portfolio h2 {
   font-size: 50px;
 }
+
 .box_portfolio {
   position: relative;
   margin-top: 25px;
   cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .img_portfolio {
   width: 100%;
-  border-radius: 10px;
 }
 
 .overlay::after {
@@ -114,7 +141,6 @@ padding: 40px 0;
 
 .overlay:hover::after {
   background-color: rgba(26, 188, 156, 0.9);
-  border-radius: 10px;
   background-image: url("../img/icon/add.svg");
   background-repeat: no-repeat;
   background-size: 20%;
@@ -161,9 +187,8 @@ padding: 40px 0;
     font-size: 40px;
   }
 
-  #star, #row_star {
+  .star {
     font-size: 28px;
-    line-height: 55px;
   }
   /* /hero */
   /* main */
@@ -177,9 +202,8 @@ padding: 40px 0;
     font-size: 40px;
   }
 
-  #star, #row_star {
+  .star {
     font-size: 25px;
-    line-height: 5px;
   }
   /* /portfolio */
   /* /main */
@@ -194,11 +218,6 @@ padding: 40px 0;
   .link_nav a {
     display: none;
   }
-
-  #hamburger {
-    display: inline-block;
-    font-size: 40px;
-  }
   /* /nav */
   /* hero */
   .container_hero h1 {
@@ -209,9 +228,8 @@ padding: 40px 0;
     font-size: 18px;
   }
 
-  #star, #row_star {
+  .star {
     font-size: 25px;
-    line-height: 40px;
   }
   /* /hero */
   /* main */
@@ -225,9 +243,10 @@ padding: 40px 0;
     font-size: 30px;
   }
 
-  #star, #row_star {
+  .star {
     font-size: 25px;
   }
+
   /* portfolio */
   /* /main */
 }
