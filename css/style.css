@@ -1,7 +1,7 @@
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 body {
   font-family: 'lato', sans-serif;
@@ -10,6 +10,14 @@ body {
 h1, h2 {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+.logo h2 {
+  font-size: 28px;
 }
 
 a:visited {
@@ -61,34 +69,38 @@ li {
 }
 
 .link_nav a:hover {
-  color:  rgb(26, 188, 156);
+  color: rgb(26, 188, 156);
 }
 
 /* /nav */
 /* hero */
 .container_hero {
-  padding: 50px;
-  margin-top: 100px;
+  padding: 100px;
+  margin-top: 80px;
 }
 
-.container_hero p {
+.container_hero p, .container_about p {
   font-size: 20px;
 }
 
 .img_hero {
-width:25%;
+width:21%;
 }
 
 .container_hero h1 {
   padding-top: 20px;
-  font-size: 60px;
+  font-size: 70px;
+}
+
+.container_hero .divider_star {
+padding: 15px 0;
 }
 
 .star {
-  font-size: 40px;
+  font-size: 35px;
   vertical-align: middle;
   display: inline-block;
-  padding:15px;
+  padding:5px 15px;
 }
 
  .row_star  {
@@ -100,11 +112,9 @@ width:25%;
   vertical-align: middle;
  }
 
- #portfolio .row_star {
+ .divider_star .row_star {
    background-color: currentColor;
  }
-
-
 /* /hero */
 /* /HEADER */
 
@@ -112,20 +122,22 @@ width:25%;
 section {
 padding: 40px 0;
 }
+
 /* portfolio */
-#portfolio h2 {
+/* #portfolio h2, .container_about h2 {
   font-size: 50px;
-}
+} */
 
 .box_portfolio {
   position: relative;
-  margin-top: 25px;
+  margin: 30px 0;
   cursor: pointer;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .img_portfolio {
+  border-radius: 10px;
   width: 100%;
 }
 
@@ -147,12 +159,38 @@ padding: 40px 0;
   background-position: 50% 50%;
 }
 /* /portfolio */
+
+/* sezione about */
+.container_about {
+  padding: 90px;
+}
+.container_about p {
+  width: 75%;
+  margin: 30px auto;
+}
+
+.button_about {
+  margin-top: 15px;
+}
+
+.button_about button {
+  font-size: 20px;
+  background-color:  #1abc9c;
+  border-radius: 10px;
+  padding: 15px 25px;
+  border: 2px solid white;
+}
+
+.button_about i {
+  padding-right: 8px;
+}
+/* /sezione about */
 /* /MAIN */
 
 /* RESPONSIVE */
 /* DESKTOP */
 @media screen and (min-width:992px) and (max-width:1200px) {
-  .title > h2 {
+  .logo > h2 {
     font-size: 25px;
   }
 /* nav */
@@ -170,7 +208,7 @@ padding: 40px 0;
 /* TABLLET */
 @media screen and (min-width:768px) and (max-width:991px) {
   /* nav */
-  .title > h2 {
+  .logo > h2 {
     font-size: 20px;
   }
 
@@ -198,7 +236,7 @@ padding: 40px 0;
     border-radius: 10px;
   }
 
-  #portfolio h2 {
+  h2 {
     font-size: 40px;
   }
 
@@ -211,7 +249,7 @@ padding: 40px 0;
 /* SMARTPHONE */
 @media screen and (max-width:767px) {
 
-  .title > h2 {
+  .logo > h2 {
     font-size: 15px;
   }
   /* nav */
@@ -228,6 +266,10 @@ padding: 40px 0;
     font-size: 18px;
   }
 
+  .img_hero {
+    width: 30%;
+  }
+
   .star {
     font-size: 25px;
   }
@@ -236,10 +278,9 @@ padding: 40px 0;
   /* portfolio */
   .img_portfolio {
     width: 65%;
-    border-radius: 10px;
   }
 
-  #portfolio h2 {
+  h2 {
     font-size: 30px;
   }
 
@@ -248,6 +289,11 @@ padding: 40px 0;
   }
 
   /* portfolio */
+  /* sezione about */
+  .button_about button {
+    font-size: 16px;
+  }
+  /* /sezione about */
   /* /main */
 }
 
