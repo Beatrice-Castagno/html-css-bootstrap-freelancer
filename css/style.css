@@ -7,7 +7,7 @@ body {
   font-family: 'lato', sans-serif;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
 }
@@ -27,6 +27,7 @@ a:visited {
 li {
   list-style-type: none;
 }
+
 .button_general {
   background-color: #1abc9c;
   border-radius: 7px;
@@ -50,6 +51,10 @@ li {
 }
 .color_dark_grey {
   color: #2c3e50;
+}
+
+.bg_dark {
+ background-color: #1A252F;
 }
 /* color text */
 
@@ -207,6 +212,55 @@ padding: 40px 0;
 
 /* /sezione contact */
 /* /MAIN */
+/* FOOTER */
+footer {
+  margin-top: 80px;
+}
+
+.container_footer {
+  padding: 90px;
+}
+
+.container_footer p {
+  font-size: 20px;
+  line-height: 30px;
+  width:82%;
+  margin: 0 auto;
+}
+
+.container_footer h3 {
+  padding: 20px 0;
+}
+
+.icon_footer a {
+  text-align: center;
+  height: 50px;
+  width:50px;
+  font-size: 20px;
+  display: inline-block;
+  padding: 8px 0;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-right:10px;
+}
+
+.icon_footer a:hover {
+  background-color: white;
+  color: #2c3e50;
+}
+
+.link_footer a {
+  color:  #1abc9c;
+}
+
+.link_footer a:hover {
+  color: #117964;
+}
+
+.text_row_dark p {
+  margin: 25px 0;
+}
+/* /FOOTER */
 
 /* RESPONSIVE */
 /* DESKTOP */
@@ -277,7 +331,34 @@ padding: 40px 0;
   }
   /* /sezione contact */
   /* /main */
+  /* footer */
+  .container_footer {
+    padding: 50px;
+  }
+
+  .container_footer h3 {
+    font-size: 22px;
+    padding: 15px 0;
+  }
+
+  .container_footer p {
+    font-size: 17px;
+    line-height: 20px;
+    width: 45%;
+    margin:0 auto;
+  }
+
+  .icon_footer {
+    padding-bottom: 25px;
+  }
+
+  .icon_footer a {
+    height: 45px;
+    width:45px;
+    font-size: 18px;
+  }
 }
+/* /footer */
 /* SMARTPHONE */
 @media screen and (max-width:767px) {
 
@@ -337,6 +418,35 @@ padding: 40px 0;
   }
   /* /sezione contact */
   /* /main */
-}
+  /* footer */
+  footer {
+    margin-top: 60px;
+  }
+  .container_footer {
+    padding: 60px;
+  }
 
+  .container_footer h3 {
+    font-size: 20px;
+    padding: 15px 0;
+  }
+
+  .container_footer p {
+    font-size: 15px;
+    line-height: 20px;
+    width: 40%;
+    margin:0 auto;
+  }
+
+  .icon_footer {
+    padding-bottom: 25px;
+  }
+
+  .icon_footer a {
+    height: 40px;
+    width:40px;
+    font-size: 15px;
+  }
+}
+/* /footer */
 /* /REPSONSIVE */
