@@ -20,7 +20,7 @@ h2 {
   font-size: 28px;
 }
 
-a:visited {
+a:link, a:visited  {
   color:white;
 }
 
@@ -28,7 +28,7 @@ li {
   list-style-type: none;
 }
 
-.button_general {
+.button_general button {
   background-color: #1abc9c;
   border-radius: 7px;
   font-size: 20px;
@@ -91,8 +91,8 @@ li {
   margin-top: 80px;
 }
 
-.container_hero p, .container_about p {
-  font-size: 20px;
+.container_hero p {
+  font-size: 25px;
 }
 
 .img_hero {
@@ -135,14 +135,13 @@ section {
 padding: 40px 0;
 }
 
-/* portfolio */
-/* #portfolio h2, .container_about h2 {
-  font-size: 50px;
-} */
+#portfolio {
+  padding: 70px 0;
+}
 
 .box_portfolio {
   position: relative;
-  margin: 30px 0;
+  margin: 25px 12px;
   cursor: pointer;
   border-radius: 10px;
   overflow: hidden;
@@ -177,6 +176,7 @@ padding: 40px 0;
   padding: 90px;
 }
 .container_about p {
+  font-size: 20px;
   width: 75%;
   margin: 30px auto;
 }
@@ -187,6 +187,11 @@ padding: 40px 0;
 
 .button_about button {
   border: 2px solid white;
+}
+
+.button_about button:hover {
+  background-color: white;
+  color: black;
 }
 
 .button_about i {
@@ -203,11 +208,16 @@ padding: 40px 0;
   width: 70%;
   border: none;
   border-bottom: 1px solid rgb(233, 236, 239);
-  padding:25px 0;
+  padding:30px 0;
 }
 
 .button_contact button {
   border: none;
+}
+
+.button_contact button:hover {
+ background-color: #159a80;
+ border-color: #148f77;
 }
 
 /* /sezione contact */
@@ -306,11 +316,6 @@ footer {
   /* /hero */
   /* main */
   /* portfolio */
-  .img_portfolio {
-    width: 80%;
-    border-radius: 10px;
-  }
-
   h2 {
     font-size: 40px;
   }
@@ -389,16 +394,17 @@ footer {
   /* /hero */
   /* main */
   /* portfolio */
-  .img_portfolio {
-    width: 65%;
-  }
-
   h2 {
     font-size: 30px;
   }
 
   .star {
     font-size: 25px;
+  }
+
+  .box_portfolio {
+    width: 50%;
+    margin: 20px auto;
   }
   /* portfolio */
   /* sezione about */
